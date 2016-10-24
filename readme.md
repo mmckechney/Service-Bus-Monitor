@@ -54,5 +54,5 @@ The function will create 2 custom metrics for each queue and topic/subscription 
 
 __Optionally, you can also create an alert for specific threshold values of your new metric.__
 
-Thanks to Simon Schwingel for kickstarting this code!
+Thanks to [Simon Schwingel](https://www.linkedin.com/in/simon-schwingel-b602869a/en) for kickstarting this code!
 
