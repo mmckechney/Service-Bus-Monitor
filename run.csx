@@ -41,6 +41,7 @@ public static void Run(TimerInfo myTimer, TraceWriter log)
 
                 telemetry.TrackMetric($"{queueName}-Active-Length", counts.ActiveMessageCount);
                 telemetry.TrackMetric($"{queueName}-Deadletter-Length", counts.DeadLetterMessageCount);
+                telemetry.TrackMetric($"{queueName}-Scheduled-Length", counts.ScheduledMessageCount);
 
             }
 
@@ -65,6 +66,7 @@ public static void Run(TimerInfo myTimer, TraceWriter log)
 
                     telemetry.TrackMetric($"{topicName}-{subName}-Active-Length", counts.ActiveMessageCount);
                     telemetry.TrackMetric($"{topicName}-{subName}-Deadletter-Length", counts.DeadLetterMessageCount);
+                    telemetry.TrackMetric($"{topicName}-{subName}-Scheduled-Length", counts.ScheduledMessageCount);
 
                 }
 
